@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest-framework',
-    'games.apps.GameConfig'
+    # Django REST Framework
+    'rest_framework',
+    #Games Application
+    'games.apps.GamesConfig'
 ]
 
 MIDDLEWARE = [
@@ -81,6 +83,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+# DATABASES = {'default': dj_database_url.config(conn_max_age=600)}
 
 
 # Password validation
