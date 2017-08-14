@@ -30,10 +30,9 @@ def game_list(request):
     if game_serializer.is_valid():
       game_serializer.save()
       return JSONResponse(game_serializer.data,
-      status=status.HTTP_201_CREATED)
-      return JSONResponse(game_serializer.errors,
-      status=status.HTTP_400_BAD_REQUEST)
-
+    status=status.HTTP_201_CREATED)
+    return JSONResponse(game_serializer.errors,
+  status=status.HTTP_400_BAD_REQUEST)
 
 @csrf_exempt
 def game_detail(request, pk):
