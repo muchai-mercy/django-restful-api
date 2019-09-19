@@ -2,7 +2,7 @@ autopep8==1.4.4
 certifi==2017.7.27.1
 chardet==3.0.4
 coverage==4.4.1
-Django==1.11.4
+Django==1.11.23
 djangorestframework==3.9.1
 httpie==1.0.3
 idna==2.8
