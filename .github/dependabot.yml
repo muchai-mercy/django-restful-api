@@ -1,0 +1,28 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: pygments
+    versions:
+    - 2.7.4
+    - 2.8.0
+  - dependency-name: urllib3
+    versions:
+    - 1.26.3
+  - dependency-name: coverage
+    versions:
+    - "5.4"
+  - dependency-name: pytz
+    versions:
+    - "2020.5"
+  - dependency-name: httpie
+    versions:
+    - 2.3.0
+  - dependency-name: pycodestyle
+    versions:
+    - 2.6.0
